@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        input[type="radio"]:checked {
+            accent-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Test femboy</h1>
+
+    <form>
+        <p>1. Tu aime les jupes ?</p>
+        <input type="radio" id="q1_yes" name="q1" value="yes">
+        <label for="q1_yes">Oui</label>
+        <input type="radio" id="q1_no" name="q1" value="no">
+        <label for="q1_no">Non</label>
+
+        <p>2. Tu met du vernis des foit ?</p>
+        <input type="radio" id="q2_yes" name="q2" value="yes">
+        <label for="q2_yes">Oui</label>
+        <input type="radio" id="q2_no" name="q2" value="no">
+        <label for="q2_no">Non</label>
+
+        <p>3. est tu gay?</p>
+        <input type="radio" id="q3_yes" name="q3" value="yes">
+        <label for="q3_yes">Oui</label>
+        <input type="radio" id="q3_no" name="q3" value="no" onclick="this.checked = false; document.getElementById('q3_yes').checked = true;">
+        <label for="q3_no">Non</label>
+
+        <p>4. Tu boit de la monster ?</p>
+        <input type="radio" id="q4_yes" name="q4" value="yes">
+        <label for="q4_yes">Oui</label>
+        <input type="radio" id="q4_no" name="q4" value="no">
+        <label for="q4_no">Non</label>
+
+        <p>5. tu te maquille ?</p>
+        <input type="radio" id="q5_yes" name="q5" value="yes">
+        <label for="q5_yes">Oui</label>
+        <input type="radio" id="q5_no" name="q5" value="no">
+        <label for="q5_no">Non</label>
+        
+        <p>6. tu te costplay ?</p>
+        <input type="radio" id="q6_yes" name="q6" value="yes">
+        <label for="q6_yes">Oui</label>
+        <input type="radio" id="q6_no" name="q6" value="no">
+        <label for="q6_no">Non</label>
+
+        <br><br>
+        <button type="button" style="background-color: black; color: white;" onclick="document.getElementById('resultat').innerText = 'Resultat : Tu es 100% un femboy.'">Voir le resultat</button>
+        
+        <p id="resultat" style="font-weight: bold; margin-top: 20px;"></p>
+    </form>
+
+</body>
+</html>
