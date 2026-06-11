@@ -2,8 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <style>
+        /* Uniquement pour que ce soit lisible sur téléphone sans coller aux bords */
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            margin: 0;
+        }
+        /* Force les boutons radio à devenir noirs quand ils sont cochés */
         input[type="radio"]:checked {
             accent-color: black;
         }
@@ -26,7 +34,7 @@
         <input type="radio" id="q2_no" name="q2" value="no">
         <label for="q2_no">Non</label>
 
-        <p>3. est tu gay?</p>
+        <p>3. est tu gay? :3 ?</p>
         <input type="radio" id="q3_yes" name="q3" value="yes">
         <label for="q3_yes">Oui</label>
         <input type="radio" id="q3_no" name="q3" value="no" onclick="this.checked = false; document.getElementById('q3_yes').checked = true;">
@@ -51,9 +59,9 @@
         <label for="q6_no">Non</label>
 
         <br><br>
-        <button type="button" style="background-color: black; color: white;" onclick="document.getElementById('resultat').innerText = 'Resultat : Tu es 100% un femboy.'">Voir le resultat</button>
+        <button type="button" style="background-color: black; color: white; padding: 10px 20px; border: none; font-size: 16px;" onclick="document.getElementById('resultat').innerText = 'Resultat : Tu es 100% un femboy.'">Voir le resultat</button>
         
-        <p id="resultat" style="font-weight: bold; margin-top: 20px;"></p>
+        <p id="resultat" style="font-weight: bold; margin-top: 20px; font-size: 18px;"></p>
     </form>
 
 </body>
